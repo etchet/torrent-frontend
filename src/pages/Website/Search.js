@@ -5,7 +5,7 @@ export default function Search() {
     return (
         <div>
             <Navbar />
-            search
+            search hello im lakshay 
         </div>
     )
 }
