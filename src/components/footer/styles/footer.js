@@ -62,6 +62,9 @@ export const Link = styled.a`
       transform: rotate(5deg) scale(1.3);
       transition: 200ms ease-in;
       width: 125px;  
+      @media (max-width: 600px) {
+        width: 100%;
+      } 
   }
 `;
 

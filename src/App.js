@@ -8,6 +8,8 @@ import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
 import Search from "./pages/Website/Search";
 
+//footer
+import { FooterContainer } from "./container/footer";
 
 function App() {
   return (
