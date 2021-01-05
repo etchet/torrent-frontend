@@ -8,12 +8,9 @@ import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
 import Search from "./pages/Website/Search";
 
-// FOOTER
-import { FooterContainer } from "./container/footer";
 
 function App() {
   return (
-    <>
     <Router>
       <Switch>
         {/* Dashboard Routes */}
@@ -23,10 +20,12 @@ function App() {
         {/* Authentication Routes */}
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
+        
       </Switch>
+       
     </Router>
-    {/* <FooterContainer /> */}
-    </>
+            
+
   );
 }
 
