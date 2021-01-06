@@ -22,12 +22,8 @@ function App() {
         {/* Authentication Routes */}
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
-        
       </Switch>
-       
     </Router>
-            
-
   );
 }
 
