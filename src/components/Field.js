@@ -17,6 +17,7 @@ const InputField = styled.input`
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.25);
   font-style: normal;
   font-weight: bold;
+  border: 0;
   font-size: 16px;
   line-height: 16px;
   color: #b8b8b8;
@@ -43,6 +44,7 @@ const SearchButton = styled.span`
   height: 40px;
   width: 40px;
   padding: 7px 0 0 7px;
+  border: 0;
   margin-left: 14px;
 `;
 
