@@ -23,7 +23,7 @@ const DropDownHeader = styled("div")`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 8.5px 20px 8.5px 20px;
+  padding: 10.5px 20px 10.5px 20px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
   font-weight: 500;
   font-size: 16px;
