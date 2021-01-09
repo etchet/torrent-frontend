@@ -7,7 +7,7 @@ import Home from "./pages/Dashboard/Home";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
 import Search from "./pages/Website/Search";
-
+import footer from "./components/footer/styles/footer";
 //footer
 import { FooterContainer } from "./container/footer";
 
@@ -23,6 +23,7 @@ function App() {
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
       </Switch>
+      <footer></footer>
     </Router>
   );
 }

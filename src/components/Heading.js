@@ -10,7 +10,10 @@ export default styled.h3`
       props.text === "large " ? "28px;" : props.text === "caption" ? "24px;" : props.text === "normal" ? "16px;" : props.text === "small" ? "14px;" : "24px;"}
     line-height: ${(props) =>
       props.text === "large " ? "42px;" : props.text === "caption" ? "36px;" : props.text === "normal" ? "24px;" : props.text === "small" ? "21px;" : "36px;"}
-    color: ${(props) => (props.color === "green" ? "#00E3D9" : props.color === "black" ? "#000000" : "#FFFFFF")}
+    color: ${(props) => 
+      props.color === "green" ? "#00E3D9;" : props.color === "black" ? "#000000;" : "#FFFFFF;"}
+      margin-left: ${(props) =>
+      props.marginLeft === "yes" ? "7px;" : "0px;"}
 `;
 // Usage:
 

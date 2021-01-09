@@ -1,3 +1,17 @@
 body {
   background: #222831;
 }
+
+.make-inline-block{
+
+  display: inline-block;
+}
+
+.make-center-align{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}

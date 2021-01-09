@@ -2,16 +2,35 @@ import React from "react";
 import styled from "styled-components";
 import Dashboard from "../../layouts/Dashboard";
 import Field from "../../components/Field";
+import {Movie,MovieContainer,MovieGradient} from "../../components/Movies.js";
 
 const Heading = styled.h1`
-  background: linear-gradient(180deg, #e25353 0%, #831e1e 100%);
+ background-color: #00CFAA;
+  font-family: Vidaloka;
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 87px;
+text-align: center;
+margin: 0px 0px 10px 0px;
+padding :0px ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 
-const Categories = styled.ul``;
+const Categories = styled.ul`
+margin-left:auto;
+margin-right: auto;
+display: inline-block;
 
-const Category = styled.li``;
+`;
+
+const Category = styled.li`
+display: inline-block;
+margin: 0px 30px;
+color: #FFFFFF;
+margin: 2px 10px;
+`;
 
 const SearchBoxContainer = styled.div`
   display: flex;
@@ -20,6 +39,14 @@ const SearchBoxContainer = styled.div`
   align-items: center;
 `;
 
+const SearchDesign = styled.h3`
+display: inline-block;
+color: #FFFFFF;
+
+
+`;
+
+
 const SearchBar = () => {
   return (
     <div>
@@ -27,12 +54,13 @@ const SearchBar = () => {
         <Field type="search" />
       </div>
       <div>
-        Search
+        <SearchDesign>Search</SearchDesign>
         <Categories>
-          <Category>Movies</Category>
-          <Category>Movies</Category>
-          <Category>Movies</Category>
-          <Category>Movies</Category>
+          <Category >Movies</Category>
+          <Category>TV Shows</Category>
+          <Category>Music</Category>
+          <Category>Games</Category>
+          <Category>Downloads</Category>
         </Categories>
       </div>
     </div>
@@ -44,36 +72,27 @@ const SearchBox = () => {
     <SearchBoxContainer>
       <Heading>The Torrent Company</Heading>
       <SearchBar></SearchBar>
+
+  
+
     </SearchBoxContainer>
   );
 };
 
-const MoviesShowcase = () => {
-  return <div></div>;
-};
 
-const Movie = () => {
-  return <div></div>;
-};
-
-const Highlights = () => {
-  return (
-    <div>
-      <MoviesShowcase>
-        <Movie />
-        <Movie />
-        <Movie />
-        <Movie />
-      </MoviesShowcase>
-    </div>
-  );
-};
 
 function Search() {
   return (
     <Dashboard>
       <SearchBox />
-      <Highlights />
+     <MovieContainer> 
+      <Movie image="p1"> <MovieGradient/></Movie>
+      <Movie image="p2"> <MovieGradient/></Movie>
+      <Movie image="p3"> <MovieGradient/></Movie>
+      <Movie image="p4"> <MovieGradient/></Movie>
+      <Movie image="p5"> <MovieGradient/></Movie>
+     
+     </MovieContainer>
     </Dashboard>
   );
 }

@@ -41,8 +41,8 @@ const SearchButton = styled.span`
   display: inline-block;
   background: linear-gradient(0deg, #00cfaa -3.5%, #00f4ff 100%);
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.25);
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   padding: 7px 0 0 7px;
   border: 0;
   margin-left: 14px;
