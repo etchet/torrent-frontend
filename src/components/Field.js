@@ -56,12 +56,17 @@ const SearchButton = styled.button`
     }
 `;
 
+const SearchContainer = styled.form`
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+`;
+
 function Input({ placeholderText, type, name, label }) {
   if (type == "search") {
     return (
       <Label>
         {label}
-        <Container>
+        <SearchContainer>
           <InputField type={type} placeholder={placeholderText} name={name} required />
           <SearchButton>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +76,7 @@ function Input({ placeholderText, type, name, label }) {
               />
             </svg>
           </SearchButton>
-        </Container>
+        </SearchContainer>
       </Label>
     );
   } else if (type == "checkbox" || type == "radio") {
