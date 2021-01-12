@@ -37,15 +37,28 @@ const Label = styled.label`
   flex-direction: column;
 `;
 
-const SearchButton = styled.span`
-  display: inline-block;
-  background: linear-gradient(0deg, #00cfaa -3.5%, #00f4ff 100%);
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.25);
-  height: 35px;
-  width: 35px;
-  padding: 7px 0 0 7px;
-  border: 0;
-  margin-left: 14px;
+const SearchButton = styled.button`
+    display: inline-block;
+    background: linear-gradient(0deg, #00CFAA -3.5%, #00F4FF 100%);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-left: 14px;
+    transition: all .1s;
+
+    &:active{
+        transform: scale(.95);
+    }
+`;
+
+const SearchContainer = styled.form`
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
 `;
 
 function Input({ placeholderText, type, name, label }) {
@@ -53,7 +66,7 @@ function Input({ placeholderText, type, name, label }) {
     return (
       <Label>
         {label}
-        <Container>
+        <SearchContainer>
           <InputField type={type} placeholder={placeholderText} name={name} required />
           <SearchButton>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +76,7 @@ function Input({ placeholderText, type, name, label }) {
               />
             </svg>
           </SearchButton>
-        </Container>
+        </SearchContainer>
       </Label>
     );
   } else if (type == "checkbox" || type == "radio") {
