@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Dashboard from "../../layouts/Dashboard";
 import Field from "../../components/Field";
 import {Movie,MovieContainer,MovieGradient} from "../../components/Movies.js";
+import {FinalSearchNavbar} from "../../components/SearchNavbar.js";
 
 const Heading = styled.h1`
  background-color: #00CFAA;
@@ -37,6 +38,7 @@ const SearchBoxContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top:50px;
 `;
 
 const SearchDesign = styled.h3`
@@ -83,7 +85,8 @@ const SearchBox = () => {
 
 function Search() {
   return (
-    <Dashboard>
+   <div>
+     <FinalSearchNavbar/>
       <SearchBox />
      <MovieContainer> 
       <Movie image="p1"> <MovieGradient/></Movie>
@@ -93,7 +96,7 @@ function Search() {
       <Movie image="p5"> <MovieGradient/></Movie>
      
      </MovieContainer>
-    </Dashboard>
+    </div>
   );
 }
 

@@ -1,8 +1,14 @@
 import styled from 'styled-components'
 
 export default styled.button `
-        min-width: 20rem;
-        min-height: 3rem;
+        min-width: ${props =>
+            props.size === 'mid' ? '11.25rem;' :
+            '20rem;'
+        }
+        min-height: ${props =>
+            props.size === 'mid' ? '2.5rem;' :
+            '3rem;'
+        }
         background: ${props =>
             props.color === 'danger' ? 'linear-gradient(180deg, #E25353 0%, #831E1E 100%);' :
             props.color === 'success' ? 'linear-gradient(0deg, #00CFAA -3.5%, #00F4FF 100%);' :

@@ -17,7 +17,7 @@ font-size: 36px;
 line-height: 49px;
 
 text-align: center;
-position: relative;
+
 
 color: #FFFFFF;
 
@@ -40,7 +40,7 @@ return(
 };
 
 const InputBoxDesign= styled.div`
-margin: 0px auto 24px auto;
+margin: 0px auto 20px auto;
 
 `;
 
@@ -48,12 +48,21 @@ const RegisterBoxDesign = styled.div`
 width: 529px;
 height: 541px;
 background-color: #3B414B;
-padding-left:7px;
+padding-left:15px;
 display:inline-block;
-position:relative;
-left:4px;
+position:absolute;
+
 
 `;
+
+const ButtonBox = styled.div`
+width: 264px;
+height: 50px;
+display: inline-block;
+text-align:center;
+
+`
+;
 
 const RegisterBox = () =>{
   return(
@@ -64,8 +73,9 @@ const RegisterBox = () =>{
 <InputBox name="Password"/>
 <InputBox name="Confirm Password"/>
 <div>
-<div className="make-inline-block"> <Button>Register</Button></div>
-<div className="make-inline-block"><Headings text="small">want to login?</Headings></div>
+<ButtonBox> <Button size="mid">Register</Button></ButtonBox>
+<ButtonBox><Headings text="small">Login Instead</Headings></ButtonBox>
+
 </div>
     </RegisterBoxDesign>
   );
@@ -76,22 +86,22 @@ background-image:url('watching2.jpg');
 width: 361px;
 height: 541px;
 background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-  
+background-position: center;
+background-size: cover;
+display:inline-block;
+position:relative;
+left:529px;
+
 
 
 `;
 const FinalRegisterBox = styled.div`
-margin:80px auto 50px 180px;
+margin:80px auto 50px 200px;
 
 display: inline-block;
-  flex-direction: column;
-  
-  align-items: center;
-  
 
+  
+position:absolute;
 
 
 `;
@@ -104,7 +114,7 @@ function Register() {
     <RegisterBox/>  <ImageBox/>
     
     </FinalRegisterBox>
-    <copyright/>
+ 
 
    </div> );
 };

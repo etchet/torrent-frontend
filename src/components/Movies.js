@@ -23,7 +23,7 @@ export const MovieContainer = styled.div`
 width: 1018.5px;
 height: 248px;
 
-
+margin-top:50px;
 display: flex;
 margin-left: auto;
 margin-right: auto;
